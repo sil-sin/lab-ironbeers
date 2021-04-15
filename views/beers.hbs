@@ -1,0 +1,15 @@
+<div>
+        <nav>
+        <a href="/">Home</a>
+        <a href="/beer">Beers</a>
+        <a href="/random-beer">Random Beer</a>
+    </nav>
+</div>
+
+<div class="mainClass">
+   {{#each beersFromApi}}
+    {{> partial this}}
+    {{/each}}
+</div>
+
+<footer>Designed by Silvi and Julie</footer>
